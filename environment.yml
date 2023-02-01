@@ -1,59 +1,88 @@
 name: base
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=5.1=1_gnu
-  - asn1crypto=1.3.0=py37_0
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - brotlipy=0.7.0=py38h0a891b7_1005
+  - bzip2=1.0.8=h7f98852_4
+  - c-ares=1.18.1=h7f98852_0
   - ca-certificates=2022.12.7=ha878542_0
   - certifi=2022.12.7=pyhd8ed1ab_0
-  - cffi=1.14.0=py37h2e261b9_0
-  - chardet=3.0.4=py37_1003
-  - conda=4.14.0=py37h89c1867_0
-  - conda-package-handling=1.6.0=py37h7b6447c_0
-  - cryptography=2.8=py37h1ba5d50_0
-  - cudatoolkit=10.1.243=h6bb024c_0
-  - fftw=3.3.10=nompi_h77c792f_102
-  - idna=2.8=py37_0
-  - ld_impl_linux-64=2.33.1=h53a641e_7
-  - libblas=3.9.0=15_linux64_openblas
-  - libcblas=3.9.0=15_linux64_openblas
-  - libedit=3.1.20181209=hc058e9b_0
-  - libffi=3.2.1=hd88cf55_4
-  - libgcc-ng=11.2.0=h1234567_1
+  - cffi=1.15.1=py38h4a40e3a_2
+  - charset-normalizer=2.1.1=pyhd8ed1ab_0
+  - colorama=0.4.6=pyhd8ed1ab_0
+  - conda=22.11.1=py38h578d9bd_1
+  - conda-package-handling=2.0.2=pyh38be061_0
+  - conda-package-streaming=0.7.0=pyhd8ed1ab_1
+  - cryptography=38.0.4=py38h80a4ca7_0
+  - cudatoolkit=11.2.2=hbe64b41_11
+  - fmt=9.1.0=h924138e_0
+  - icu=70.1=h27087fc_0
+  - idna=3.4=pyhd8ed1ab_0
+  - keyutils=1.6.1=h166bdaf_0
+  - krb5=1.19.3=h08a2579_0
+  - ld_impl_linux-64=2.39=hcc3a1bd_1
+  - libarchive=3.5.2=hada088e_3
+  - libblas=3.9.0=16_linux64_openblas
+  - libcblas=3.9.0=16_linux64_openblas
+  - libcurl=7.86.0=h2283fc2_1
+  - libedit=3.1.20191231=he28a2e2_2
+  - libev=4.33=h516909a_1
+  - libffi=3.4.2=h7f98852_5
+  - libgcc-ng=12.2.0=h65d4601_19
   - libgfortran-ng=12.2.0=h69a702a_19
   - libgfortran5=12.2.0=h337968e_19
-  - libgomp=11.2.0=h1234567_1
-  - liblapack=3.9.0=15_linux64_openblas
-  - libopenblas=0.3.20=pthreads_h78a6416_0
-  - libstdcxx-ng=9.1.0=hdf63c60_0
-  - ncurses=6.2=he6710b0_0
-  - numpy=1.20.3=py37h3e96413_2
+  - libgomp=12.2.0=h65d4601_19
+  - libiconv=1.17=h166bdaf_0
+  - liblapack=3.9.0=16_linux64_openblas
+  - libmamba=1.0.0=h9eff5f0_2
+  - libmambapy=1.0.0=py38h2cd2533_2
+  - libnghttp2=1.47.0=hff17c54_1
+  - libnsl=2.0.0=h7f98852_0
+  - libopenblas=0.3.21=pthreads_h78a6416_3
+  - libsolv=0.7.22=h6239696_0
+  - libsqlite=3.40.0=h753d276_0
+  - libssh2=1.10.0=hf14f497_3
+  - libstdcxx-ng=12.2.0=h46fd767_19
+  - libuuid=2.32.1=h7f98852_1000
+  - libxml2=2.10.3=h7463322_0
+  - libzlib=1.2.13=h166bdaf_4
+  - lz4-c=1.9.3=h9c3ff4c_1
+  - lzo=2.10=h516909a_1000
+  - mamba=1.0.0=py38haad2881_2
+  - ncurses=6.3=h27087fc_1
+  - numpy=1.24.1=py38h10c12cc_0
   - ocl-icd=2.3.1=h7f98852_0
   - ocl-icd-system=1.0.0=1
-  - openmm=7.6.0=py37hd49da16_0
-  - openssl=1.1.1l=h7f98852_0
+  - openmm=8.0.0=py38he9472fe_0
+  - openssl=3.0.7=h0b41bf4_2
   - pdbfixer=1.8.1=pyh6c4a22f_0
-  - pip=20.0.2=py37_1
-  - pycosat=0.6.3=py37h7b6447c_0
-  - pycparser=2.19=py37_0
-  - pyopenssl=19.1.0=py37_0
-  - pysocks=1.7.1=py37_0
-  - python=3.7.6=h0371630_2
-  - python_abi=3.7=2_cp37m
-  - readline=7.0=h7b6447c_5
-  - requests=2.22.0=py37_1
-  - ruamel_yaml=0.15.87=py37h7b6447c_0
-  - setuptools=45.2.0=py37_0
-  - six=1.14.0=py37_0
-  - sqlite=3.31.1=h7b6447c_0
-  - tk=8.6.8=hbc83047_0
+  - pip=22.3.1=pyhd8ed1ab_0
+  - pluggy=1.0.0=pyhd8ed1ab_5
+  - pybind11-abi=4=hd8ed1ab_3
+  - pycosat=0.6.4=py38h0a891b7_1
+  - pycparser=2.21=pyhd8ed1ab_0
+  - pyopenssl=22.1.0=pyhd8ed1ab_0
+  - pysocks=1.7.1=pyha2e5f31_6
+  - python=3.8.15=h4a9ceb5_0_cpython
+  - python_abi=3.8=3_cp38
+  - readline=8.1.2=h0f457ee_0
+  - reproc=14.2.3=h7f98852_0
+  - reproc-cpp=14.2.3=h9c3ff4c_0
+  - requests=2.28.1=pyhd8ed1ab_1
+  - ruamel.yaml=0.17.21=py38h0a891b7_2
+  - ruamel.yaml.clib=0.2.7=py38h1de0b5d_1
+  - ruamel_yaml=0.15.80=py38h0a891b7_1008
+  - setuptools=65.5.1=pyhd8ed1ab_0
+  - tk=8.6.12=h27826a3_0
   - toolz=0.12.0=pyhd8ed1ab_0
-  - tqdm=4.42.1=py_0
-  - urllib3=1.25.8=py37_0
-  - wheel=0.34.2=py37_0
-  - xz=5.2.4=h14c3975_4
-  - yaml=0.1.7=had09818_2
-  - zlib=1.2.11=h7b6447c_3
-prefix: /home/aistudio/work
+  - tqdm=4.64.1=pyhd8ed1ab_0
+  - urllib3=1.26.13=pyhd8ed1ab_0
+  - wheel=0.38.4=pyhd8ed1ab_0
+  - xz=5.2.6=h166bdaf_0
+  - yaml=0.2.5=h7f98852_2
+  - yaml-cpp=0.7.0=h27087fc_2
+  - zstandard=0.19.0=py38h5945529_1
+  - zstd=1.5.2=h6239696_4
+prefix: /usr/local
