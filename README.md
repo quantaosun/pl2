@@ -24,4 +24,3 @@ For more advanced use, like fixing the protein-ligand complex and showing the in
 - The 2D interaction is a draw based on the merged structure
 - The user is expected to provide the PDB ID and the ligand name as per in the PDB database, which is listed on the small molecule section of the PDB main page of the corresponding structure
 
-### After the protein prepared, the ```complex_prepared.pdb``` has the readily compatable format that can be uploaded and be recognized by Charmm Gui web server, from there molecular dynamic input can be generated easily.
